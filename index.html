@@ -20,27 +20,25 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
-
-    <header class="site-header" data-header>
-      <div class="shell header-shell">
-        <a class="brand" href="#hero" aria-label="IZES">
-          <img src="./assets/logo.png" alt="IZES" class="site-logo" />
+    <header class="cabecalho" data-cabecalho>
+      <div class="shell cabecalho-interno">
+        <a class="marca" href="#hero" aria-label="IZES">
+          <img src="./assets/logo.png" alt="IZES" class="logo-site" />
         </a>
 
         <button
-          class="menu-toggle"
+          class="botao-menu"
           type="button"
           aria-expanded="false"
-          aria-controls="mobile-menu"
-          data-menu-toggle
+          aria-controls="menu-mobile"
+          data-botao-menu
         >
           <span class="sr-only">Abrir menu</span>
           <span></span>
           <span></span>
         </button>
 
-        <nav class="desktop-nav" aria-label="Principal">
+        <nav class="navegacao-desktop" aria-label="Principal">
           <a href="#problema">Problema</a>
           <a href="#solucao">Solução</a>
           <a href="#funcionalidades">Funcionalidades</a>
@@ -52,10 +50,10 @@
           <a href="#faq">FAQ</a>
         </nav>
 
-        <a class="button button-primary header-cta" href="#cta">Ver o app</a>
+        <a class="button button-primary botao-principal" href="#cta">Ver o app</a>
       </div>
 
-      <nav class="mobile-menu" id="mobile-menu" aria-label="Menu móvel" data-mobile-menu>
+      <nav class="menu-mobile" id="menu-mobile" aria-label="Menu móvel" data-menu-mobile>
         <a href="#problema">Problema</a>
         <a href="#solucao">Solução</a>
         <a href="#funcionalidades">Funcionalidades</a>
@@ -69,8 +67,8 @@
       </nav>
     </header>
 
-    <main id="conteudo">
-      <section class="hero section" id="hero">
+    <main id="conteudo" class="conteudo-principal">
+      <section class="secao-hero section" id="hero">
         <div class="shell hero-grid">
           <div class="hero-copy stagger" data-reveal-group>
             <p class="eyebrow reveal reveal-up" data-reveal data-delay="0">Plataforma de apoio à decisão agrícola</p>
