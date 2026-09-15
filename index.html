@@ -1,512 +1,71 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>IZES | Decisões agrícolas no momento certo</title>
-    <meta
-      name="description"
-      content="O IZES conecta sensores, clima e análise inteligente para transformar dados do campo em alertas e recomendações práticas para pequenos produtores."
-    />
-    <meta name="theme-color" content="#1B5E20" />
-    <meta property="og:title" content="IZES | Decisões agrícolas no momento certo" />
-    <meta
-      property="og:description"
-      content="Dados sozinhos não mudam o agro. Decisões mudam."
-    />
+    <title>IZES | Decisões simples para pequenos produtores</title>
+    <meta name="description" content="O IZES transforma dados do solo, clima e IA em decisões simples para pequenos produtores." />
+    <meta name="theme-color" content="#f3f1e8" />
+    <meta property="og:title" content="IZES | Decisões simples para pequenos produtores" />
+    <meta property="og:description" content="Sensores de solo, dados climáticos e IA para orientar o que fazer no campo." />
     <meta property="og:image" content="./assets/logo.png" />
     <link rel="icon" type="image/png" href="./assets/favicon.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon.png" />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <header class="cabecalho" data-cabecalho>
-      <div class="shell cabecalho-interno">
-        <a class="marca" href="#hero" aria-label="IZES">
-          <img src="./assets/logo.png" alt="IZES" class="logo-site" />
-        </a>
-
-        <button
-          class="botao-menu"
-          type="button"
-          aria-expanded="false"
-          aria-controls="menu-mobile"
-          data-botao-menu
-        >
-          <span class="sr-only">Abrir menu</span>
-          <span></span>
-          <span></span>
-        </button>
-
-        <nav class="navegacao-desktop" aria-label="Principal">
-          <a href="#problema">Problema</a>
-          <a href="#solucao">Solução</a>
-          <a href="#funcionalidades">Funcionalidades</a>
-          <a href="#sensores-clima">Sensores e clima</a>
-          <a href="#inteligencia-artificial">Inteligência artificial</a>
-          <a href="#como-funciona">Como funciona</a>
-          <a href="#beneficios">Benefícios</a>
-          <a href="#diferenciais">Diferenciais</a>
-          <a href="#faq">FAQ</a>
+    <header class="site-header" data-header>
+      <div class="container header-inner">
+        <a class="brand" href="#hero" aria-label="IZES, início"><img src="./assets/logo.png" alt="IZES" /></a>
+        <nav class="desktop-nav" aria-label="Principal">
+          <a href="#problema">O desafio</a><a href="#solucao">A plataforma</a><a href="#como-funciona">Como funciona</a><a href="#funcionalidades">Recursos</a>
         </nav>
-
-        <a class="button button-primary botao-principal" href="#cta">Ver o app</a>
+        <a class="header-cta" href="#cta">Solicitar demonstração <span aria-hidden="true">↗</span></a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" data-menu-button><span class="sr-only">Abrir menu</span><i></i><i></i></button>
       </div>
-
-      <nav class="menu-mobile" id="menu-mobile" aria-label="Menu móvel" data-menu-mobile>
-        <a href="#problema">Problema</a>
-        <a href="#solucao">Solução</a>
-        <a href="#funcionalidades">Funcionalidades</a>
-        <a href="#sensores-clima">Sensores e clima</a>
-        <a href="#inteligencia-artificial">Inteligência artificial</a>
-        <a href="#como-funciona">Como funciona</a>
-        <a href="#beneficios">Benefícios</a>
-        <a href="#diferenciais">Diferenciais</a>
-        <a href="#faq">FAQ</a>
-        <a href="#cta">Ver o app</a>
+      <nav class="mobile-nav" id="mobile-menu" aria-label="Menu móvel" data-mobile-menu>
+        <a href="#problema">O desafio</a><a href="#solucao">A plataforma</a><a href="#como-funciona">Como funciona</a><a href="#funcionalidades">Recursos</a><a href="#diferenciais">Diferenciais</a><a href="#cta">Solicitar demonstração</a>
       </nav>
     </header>
 
-    <main id="conteudo" class="conteudo-principal">
-      <section class="secao-hero section" id="hero">
-        <div class="shell hero-grid">
-          <div class="hero-copy stagger" data-reveal-group>
-            <p class="eyebrow reveal reveal-up" data-reveal data-delay="0">Plataforma de apoio à decisão agrícola</p>
-            <h1 class="reveal reveal-up" data-reveal data-delay="70">Decisões agrícolas no momento certo</h1>
-            <p class="hero-text reveal reveal-up" data-reveal data-delay="140">
-              O IZES transforma dados de sensores, clima e campo em recomendações práticas
-              para pequenos produtores.
-            </p>
-
-            <div class="hero-actions reveal reveal-up" data-reveal data-delay="210">
-              <a class="button button-primary" href="#cta">Ver o app</a>
-              <a class="button button-secondary" href="#footer">Solicitar demonstração</a>
-            </div>
-
-            <ul class="hero-points reveal reveal-up" data-reveal data-delay="280" aria-label="Público do IZES">
-              <li>Microprodutores e pequenos produtores</li>
-              <li>Técnicos agrícolas e cooperativas</li>
-              <li>Parceiros, investidores e apoiadores</li>
-            </ul>
+    <main>
+      <section class="hero" id="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy" data-reveal>
+            <p class="eyebrow"><span class="live-dot"></span> Inteligência agrícola para decidir melhor</p>
+            <h1>Saiba o que a sua lavoura precisa. <span>Na hora certa.</span></h1>
+            <p class="hero-description">O IZES reúne sensores, umidade do solo, previsão do tempo e inteligência artificial para mostrar onde agir primeiro em cada talhão.</p>
+            <div class="hero-actions"><a class="button button-primary" href="#solucao">Conhecer a solução <span aria-hidden="true">↗</span></a><a class="quiet-link" href="#como-funciona">Entender como funciona <span aria-hidden="true">↓</span></a></div>
+            <div class="hero-proof"><span>Umidade do solo</span><span>Previsão do tempo</span><span>Ação no talhão</span></div>
           </div>
-
-          <div class="hero-visual reveal reveal-left" data-reveal data-delay="180">
-            <div class="app-frame floating-mockup">
-              <div class="app-frame-shell">
-                <div class="app-topbar">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </div>
-
-                <div class="app-screen">
-                  <div class="screen-header">
-                    <p>Painel IZES</p>
-                    <strong>Visão do dia</strong>
-                  </div>
-
-                  <article class="screen-card highlight-card">
-                    <span class="mini-label">Alerta prioritário</span>
-                    <h2>Atenção no Talhão 2</h2>
-                    <p>Umidade do solo abaixo do ideal. Priorize irrigação no fim da tarde.</p>
-                  </article>
-
-                  <div class="screen-metrics">
-                    <article class="screen-card">
-                      <span class="mini-label">Solo</span>
-                      <strong>Baixa umidade</strong>
-                    </article>
-                    <article class="screen-card">
-                      <span class="mini-label">Clima</span>
-                      <strong>Sem chuva próxima</strong>
-                    </article>
-                    <article class="screen-card action-card">
-                      <span class="mini-label">Próxima ação</span>
-                      <strong>Irrigar no fim da tarde</strong>
-                    </article>
-                  </div>
-                </div>
+          <div class="product-window" data-reveal data-delay="120" aria-label="Prévia da plataforma IZES">
+            <div class="window-bar"><div class="window-brand"><img src="./assets/favicon.png" alt="" /> IZES <span>/ visão da propriedade</span></div><span class="window-status"><i></i> Operação ativa</span></div>
+            <div class="window-body">
+              <aside class="window-sidebar"><span class="sidebar-label">Área monitorada</span><strong>Propriedade</strong><span>Talhões</span><span>Solo e clima</span><span>Histórico</span></aside>
+              <div class="dashboard-content"><div class="dashboard-heading"><div><span class="eyebrow">Hoje, agora</span><h2>O que pede atenção</h2></div><span class="dashboard-date">Leitura contínua</span></div>
+                <div class="priority-row"><div class="priority-mark"></div><div><span class="data-label">Recomendação</span><strong>Talhão Norte pede irrigação leve no fim da tarde.</strong><p>A decisão considera a leitura do solo e a janela do clima.</p></div><span class="arrow-circle" aria-hidden="true">↗</span></div>
+                <div class="dashboard-columns"><div class="chart-panel"><div class="panel-heading"><span class="data-label">Solo</span><span>Umidade abaixo do ideal</span></div><div class="chart" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><svg viewBox="0 0 320 90" preserveAspectRatio="none"><path d="M0 68 C35 57 45 63 73 45 S112 55 140 37 S182 54 207 26 S260 39 320 12" /></svg></div><small>Leitura contínua nas últimas horas.</small></div><div class="map-panel"><span class="data-label">Área monitorada</span><div class="field-map" aria-hidden="true"><i></i><i></i><i></i><i></i></div><small>Talhão Norte em prioridade</small></div></div>
               </div>
             </div>
-
-            <article class="hero-alert-card reveal reveal-up" data-reveal data-delay="260" aria-label="Exemplo de alerta">
-              <p class="card-kicker">Exemplo de alerta</p>
-              <h3>Atenção no Talhão 2</h3>
-              <p>Umidade do solo abaixo do ideal. Priorize irrigação no fim da tarde.</p>
-            </article>
+            <div class="window-footer"><span>Dados do solo</span><span>Previsão do tempo</span><span>Próxima ação</span></div>
           </div>
         </div>
       </section>
 
-      <section class="section" id="problema">
-        <div class="shell">
-          <div class="section-head" data-reveal>
-            <p class="eyebrow">Problema</p>
-            <h2>O campo gera sinais importantes, mas a decisão nem sempre vem no tempo certo.</h2>
-            <p>
-              Muitos produtores já têm informação suficiente para agir, mas ainda faltam
-              leitura prática, prioridade e orientação clara.
-            </p>
-          </div>
+      <section class="problem section" id="problema"><div class="container problem-stage"><div class="problem-heading" data-reveal><div><span class="section-number">01 / O desafio</span><h2>Sinais importantes, espalhados pela rotina.</h2></div><p class="lead">Pequenos produtores convivem com sinais demais e direção de menos.</p></div><div class="problem-points" data-reveal><article><b>01</b><h3>O campo muda rápido.</h3><p>Quando a leitura chega tarde, a resposta custa mais.</p></article><article><b>02</b><h3>Os dados não vêm prontos para decisão.</h3><p>Sensor, clima e rotina da propriedade raramente conversam de forma simples.</p></article><article><b>03</b><h3>Nem sempre fica claro onde agir primeiro.</h3><p>Sem prioridade prática, tempo e recurso se perdem no processo.</p></article></div></div></section>
 
-          <div class="issue-grid stagger" data-reveal-group>
-            <article class="issue-card reveal reveal-up" data-reveal>
-              <span class="issue-index">01</span>
-              <h3>Decisões tomadas tarde demais</h3>
-              <p>Quando o aviso chega depois, o custo de resposta aumenta.</p>
-            </article>
+      <section class="solution section" id="solucao"><div class="container two-column"><div class="section-intro" data-reveal><span class="section-number">02</span><p class="eyebrow">A plataforma</p><h2>Uma visão única para o que acontece no campo.</h2></div><div class="solution-content" data-reveal><p class="lead">O IZES reduz a complexidade e entrega uma orientação acionável.</p><p>Em vez de mostrar mais uma camada de painéis, o sistema interpreta o contexto agrícola e destaca a decisão mais importante do momento.</p><div class="data-path"><div><span class="path-icon">01</span><strong>Solo</strong><p>Sensores capturam o estado real da área.</p></div><div><span class="path-icon">02</span><strong>Clima</strong><p>A previsão adiciona tempo e risco à leitura.</p></div><div><span class="path-icon">03</span><strong>IA</strong><p>O sistema cruza sinais e traduz isso em prioridade.</p></div><div class="path-output"><span class="path-icon">→</span><strong>Uma recomendação clara, contextual e simples de executar.</strong></div></div></div></div></section>
 
-            <article class="issue-card reveal reveal-up" data-reveal data-delay="60">
-              <span class="issue-index">02</span>
-              <h3>Muitos dados sem orientação prática</h3>
-              <p>É difícil transformar leitura técnica em ação imediata no campo.</p>
-            </article>
+      <section class="technology section"><div class="container tech-grid"><div class="tech-copy" data-reveal><p class="eyebrow">03 / Tecnologia aplicada</p><h2>A plataforma acompanha a lavoura sem complicar a operação.</h2><p>Uma leitura contínua do solo, do clima e das áreas monitoradas para transformar informação em ação.</p><a class="text-arrow" href="#funcionalidades">Ver recursos da plataforma <span aria-hidden="true">↗</span></a></div><div class="tech-interface" data-reveal><div class="tech-tabs"><span class="active">Monitoramento</span><span>Clima</span><span>Recomendação</span></div><div class="tech-main"><div class="tech-visual"><div class="field-grid"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="map-pin pin-one"></div><div class="map-pin pin-two"></div><div class="map-legend"><span><i></i> área acompanhada</span><span><i></i> atenção recomendada</span></div></div><div class="tech-aside"><span class="data-label">Leitura da propriedade</span><h3>Solo, clima e contexto no mesmo lugar.</h3><ul><li><i></i>Sensores conectados à área</li><li><i></i>Alertas sem excesso de ruído</li><li><i></i>Histórico de decisões</li></ul></div></div></div></div></section>
 
-            <article class="issue-card reveal reveal-up" data-reveal data-delay="120">
-              <span class="issue-index">03</span>
-              <h3>Falta de prioridade sobre onde agir primeiro</h3>
-              <p>Sem ordem clara, tempo e recursos acabam sendo mal distribuídos.</p>
-            </article>
+      <section class="workflow section" id="como-funciona"><div class="container process"><div class="process-heading" data-reveal><div><span class="section-number">04 / Como funciona</span><h2>O dado percorre a propriedade até virar uma decisão.</h2></div><p>O IZES acompanha a propriedade em etapas objetivas. Cada passo prepara o próximo até a decisão chegar pronta para uso.</p></div><div class="process-track" data-reveal><div class="process-rail"><span></span></div><article class="process-step active" data-step-card><div class="process-node"><span>01</span></div><div><h3>Mapeia</h3><p>Organiza áreas, talhões e contexto produtivo.</p></div></article><article class="process-step" data-step-card><div class="process-node"><span>02</span></div><div><h3>Recebe</h3><p>Solo e clima compõem uma visão contínua do campo.</p></div></article><article class="process-step" data-step-card><div class="process-node"><span>03</span></div><div><h3>Analisa</h3><p>A IA separa ruído, desvios e urgência.</p></div></article><article class="process-step" data-step-card><div class="process-node"><span>04</span></div><div><h3>Recomenda</h3><p>O produtor recebe a próxima ação, direta e contextualizada.</p></div></article></div><div class="process-caption"><span>Propriedade</span><span>Sensor / dados</span><span>Análise</span><span>Decisão</span></div></div></section>
 
-            <article class="issue-card reveal reveal-up" data-reveal data-delay="180">
-              <span class="issue-index">04</span>
-              <h3>Perdas produtivas invisíveis</h3>
-              <p>Pequenos desvios passam despercebidos até virarem prejuízo.</p>
-            </article>
-          </div>
-        </div>
-      </section>
+      <section class="features section" id="funcionalidades"><div class="container features-grid"><div class="section-intro" data-reveal><span class="section-number">05</span><p class="eyebrow">Recursos</p><h2>Feito para a rotina real do produtor.</h2></div><div class="feature-rows" data-reveal><article class="feature-highlight"><span>Monitoramento</span><h3>Sensores e clima em uma mesma leitura operacional.</h3><p>O sistema junta o que acontece no solo com o que pode acontecer nas próximas horas.</p></article><article><span>Alertas</span><h3>Risco destacado sem excesso de ruído.</h3></article><article><span>Recomendação</span><h3>Próxima ação descrita em linguagem simples.</h3></article><article class="feature-highlight"><span>Histórico</span><h3>Registro das decisões e do que foi feito em cada área.</h3><p>Isso ajuda a acompanhar padrão, resposta e evolução ao longo do tempo.</p></article><article><span>Estrutura</span><h3>Cadastro de propriedades e talhões.</h3></article><article><span>Uso móvel</span><h3>Leitura rápida para acompanhamento em campo.</h3></article></div></div></section>
 
-      <section class="section" id="solucao">
-        <div class="shell split-layout">
-          <div class="section-head compact" data-reveal>
-            <p class="eyebrow">Solução</p>
-            <h2>O IZES mostra a ação mais importante do momento.</h2>
-            <p>
-              O IZES monitora o campo, interpreta os dados e mostra a ação mais importante
-              do momento.
-            </p>
-          </div>
+      <section class="differentials section" id="diferenciais"><div class="container differential-grid"><div class="section-intro" data-reveal><span class="section-number">06</span><p class="eyebrow">Diferenciais</p><h2>Tecnologia útil de verdade no contexto agrícola.</h2></div><div class="differential-list" data-reveal><article><span>01</span><h3>Foco em pequenos produtores</h3><p>O produto nasce da necessidade de decidir melhor com operação enxuta.</p></article><article><span>02</span><h3>Menos painel, mais prioridade</h3><p>O valor não está em exibir volume de dados, mas em orientar o que fazer.</p></article><article><span>03</span><h3>IA aplicada com função clara</h3><p>A inteligência entra para simplificar a decisão, não para virar discurso.</p></article><article><span>04</span><h3>Visual de campo, não de SaaS genérico</h3><p>Linguagem sóbria, material, escura e conectada ao ambiente agrícola.</p></article></div></div></section>
 
-          <div class="solution-grid stagger" data-reveal-group>
-            <article class="solution-card emphasis reveal reveal-up" data-reveal data-delay="50">
-              <h3>Decisão orientada</h3>
-              <p>
-                O sistema cruza leitura do solo, clima e contexto da área para ajudar o
-                produtor a saber o que fazer, onde agir e o que priorizar.
-              </p>
-            </article>
-            <article class="solution-card reveal reveal-up" data-reveal data-delay="100">
-              <h3>Coleta dados do solo e clima</h3>
-            </article>
-            <article class="solution-card reveal reveal-up" data-reveal data-delay="140">
-              <h3>Analisa riscos automaticamente</h3>
-            </article>
-            <article class="solution-card reveal reveal-up" data-reveal data-delay="180">
-              <h3>Gera alertas claros</h3>
-            </article>
-            <article class="solution-card reveal reveal-up" data-reveal data-delay="220">
-              <h3>Recomenda ações práticas</h3>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="funcionalidades">
-        <div class="shell">
-          <div class="section-head" data-reveal>
-            <p class="eyebrow">Funcionalidades</p>
-            <h2>Estrutura simples para acompanhar a propriedade e registrar decisões.</h2>
-          </div>
-
-          <div class="feature-grid stagger" data-reveal-group>
-            <article class="feature-card large reveal reveal-up" data-reveal>
-              <span class="feature-tag">Organização</span>
-              <h3>Cadastro de propriedades e talhões</h3>
-              <p>Cria uma visão do campo por áreas para acompanhar o que muda em cada ponto.</p>
-            </article>
-            <article class="feature-card reveal reveal-up" data-reveal data-delay="50">
-              <span class="feature-tag">Monitoramento</span>
-              <h3>Monitoramento por sensores</h3>
-              <p>Recebe leituras contínuas do solo e do ambiente em um só lugar.</p>
-            </article>
-            <article class="feature-card reveal reveal-up" data-reveal data-delay="100">
-              <span class="feature-tag">Clima</span>
-              <h3>Dados climáticos integrados</h3>
-              <p>Usa o clima para dar contexto e antecipar variações importantes.</p>
-            </article>
-            <article class="feature-card reveal reveal-up" data-reveal data-delay="150">
-              <span class="feature-tag">Alerta</span>
-              <h3>Alertas inteligentes</h3>
-              <p>Destaca o que saiu do esperado e pede atenção primeiro.</p>
-            </article>
-            <article class="feature-card reveal reveal-up" data-reveal data-delay="200">
-              <span class="feature-tag">Ação</span>
-              <h3>Recomendações agronômicas</h3>
-              <p>Traduz dados em orientação prática para apoiar a tomada de decisão.</p>
-            </article>
-            <article class="feature-card large reveal reveal-up" data-reveal data-delay="250">
-              <span class="feature-tag">Histórico</span>
-              <h3>Histórico de ações</h3>
-              <p>Ajuda a acompanhar o que foi feito e observar os resultados ao longo do tempo.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="sensores-clima">
-        <div class="shell split-layout">
-          <div class="section-head compact" data-reveal>
-            <p class="eyebrow">Sensores e clima</p>
-            <h2>Leitura do campo com contexto suficiente para decidir melhor.</h2>
-            <p>
-              O IZES reúne os principais sinais do solo, do ambiente e da previsão para
-              reduzir incerteza na decisão diária.
-            </p>
-          </div>
-
-          <div class="data-grid stagger" data-reveal-group>
-            <article class="data-card reveal reveal-up" data-reveal data-delay="50"><h3>Umidade do solo</h3></article>
-            <article class="data-card reveal reveal-up" data-reveal data-delay="80"><h3>Temperatura do solo</h3></article>
-            <article class="data-card reveal reveal-up" data-reveal data-delay="110"><h3>pH do solo</h3></article>
-            <article class="data-card reveal reveal-up" data-reveal data-delay="140"><h3>Nutrientes</h3></article>
-            <article class="data-card reveal reveal-up" data-reveal data-delay="170"><h3>Temperatura ambiente</h3></article>
-            <article class="data-card reveal reveal-up" data-reveal data-delay="200"><h3>Umidade do ar</h3></article>
-            <article class="data-card reveal reveal-up" data-reveal data-delay="230"><h3>Previsão do tempo</h3></article>
-            <article class="data-card reveal reveal-up" data-reveal data-delay="260"><h3>Status dos sensores</h3></article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="inteligencia-artificial">
-        <div class="shell">
-          <div class="section-head" data-reveal>
-            <p class="eyebrow">Inteligência artificial</p>
-            <h2>A IA ajuda a transformar leitura técnica em orientação simples.</h2>
-            <p>
-              O objetivo não é mostrar tecnologia por si só. É reduzir o esforço de análise
-              e apoiar decisões mais rápidas no campo.
-            </p>
-          </div>
-
-          <div class="ai-layout stagger" data-reveal-group>
-            <article class="ai-card emphasis reveal reveal-up" data-reveal>
-              <span class="feature-tag">Leitura inteligente</span>
-              <h3>O sistema ajuda o produtor a entender o que importa agora.</h3>
-              <p>
-                A IA cruza padrões, desvios e contexto da área para indicar risco, urgência
-                e melhor resposta possível naquele momento.
-              </p>
-            </article>
-            <article class="ai-card reveal reveal-up" data-reveal data-delay="60">
-              <h3>Detecta padrões</h3>
-            </article>
-            <article class="ai-card reveal reveal-up" data-reveal data-delay="100">
-              <h3>Identifica anomalias</h3>
-            </article>
-            <article class="ai-card reveal reveal-up" data-reveal data-delay="140">
-              <h3>Prioriza áreas críticas</h3>
-            </article>
-            <article class="ai-card reveal reveal-up" data-reveal data-delay="180">
-              <h3>Recomenda ações automaticamente</h3>
-            </article>
-            <article class="ai-card reveal reveal-up" data-reveal data-delay="220">
-              <h3>Traduz dados complexos em orientações simples</h3>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="como-funciona">
-        <div class="shell">
-          <div class="section-head" data-reveal>
-            <p class="eyebrow">Como funciona</p>
-            <h2>Um fluxo simples do cadastro até o acompanhamento dos resultados.</h2>
-          </div>
-
-          <ol class="flow-list stagger" data-reveal-group>
-            <li class="flow-step reveal reveal-up" data-reveal><span>1</span><p>Cadastra a propriedade</p></li>
-            <li class="flow-step reveal reveal-up" data-reveal data-delay="40"><span>2</span><p>Define os talhões</p></li>
-            <li class="flow-step reveal reveal-up" data-reveal data-delay="80"><span>3</span><p>Conecta sensores</p></li>
-            <li class="flow-step reveal reveal-up" data-reveal data-delay="120"><span>4</span><p>Recebe dados do campo</p></li>
-            <li class="flow-step reveal reveal-up" data-reveal data-delay="160"><span>5</span><p>O IZES analisa</p></li>
-            <li class="flow-step reveal reveal-up" data-reveal data-delay="200"><span>6</span><p>Recebe alertas e recomendações</p></li>
-            <li class="flow-step reveal reveal-up" data-reveal data-delay="240"><span>7</span><p>Acompanha os resultados</p></li>
-          </ol>
-        </div>
-      </section>
-
-      <section class="section" id="beneficios">
-        <div class="shell">
-          <div class="section-head" data-reveal>
-            <p class="eyebrow">Benefícios</p>
-            <h2>Mais clareza para decidir com menos desperdício e mais previsibilidade.</h2>
-          </div>
-
-          <div class="benefit-grid stagger" data-reveal-group>
-            <article class="benefit-card reveal reveal-up" data-reveal><h3>Redução de riscos produtivos</h3></article>
-            <article class="benefit-card reveal reveal-up" data-reveal data-delay="50"><h3>Decisões mais rápidas</h3></article>
-            <article class="benefit-card reveal reveal-up" data-reveal data-delay="100"><h3>Melhor uso de recursos</h3></article>
-            <article class="benefit-card reveal reveal-up" data-reveal data-delay="150"><h3>Menos desperdício</h3></article>
-            <article class="benefit-card reveal reveal-up" data-reveal data-delay="200"><h3>Maior produtividade</h3></article>
-            <article class="benefit-card reveal reveal-up" data-reveal data-delay="250"><h3>Mais previsibilidade</h3></article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="diferenciais">
-        <div class="shell split-layout">
-          <div class="section-head compact" data-reveal>
-            <p class="eyebrow">Diferenciais</p>
-            <h2>Desenhado para ser útil no campo, não só bonito na tela.</h2>
-          </div>
-
-          <div class="differential-panel" data-reveal data-delay="70">
-            <article class="differential-item">
-              <h3>Feito para pequenos produtores</h3>
-              <p>Estrutura pensada para realidades com operação enxuta e decisão rápida.</p>
-            </article>
-            <article class="differential-item">
-              <h3>Simples de entender</h3>
-              <p>Leitura clara para quem precisa agir sem depender de interpretação complexa.</p>
-            </article>
-            <article class="differential-item">
-              <h3>Foco em decisões, não só em dados</h3>
-              <p>O valor está em orientar a ação, não em exibir indicadores isolados.</p>
-            </article>
-            <article class="differential-item">
-              <h3>Prioriza o que precisa ser feito primeiro</h3>
-              <p>Ajuda a escolher onde concentrar atenção, tempo e recurso.</p>
-            </article>
-            <article class="differential-item">
-              <h3>Plataforma acessível</h3>
-              <p>Organização simples para uso prático em rotina de campo e acompanhamento móvel.</p>
-            </article>
-            <article class="differential-item">
-              <h3>Evolui com IA, clima e sensores</h3>
-              <p>Cria uma base contínua para ampliar qualidade das recomendações com o tempo.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="faq">
-        <div class="shell split-layout faq-layout">
-          <div class="section-head compact" data-reveal>
-            <p class="eyebrow">FAQ</p>
-            <h2>Perguntas frequentes sobre uso, sensores e demonstração.</h2>
-          </div>
-
-          <div class="faq-list">
-            <article class="faq-item reveal reveal-up" data-reveal>
-              <button class="faq-trigger" type="button" aria-expanded="false">
-                <span>Preciso instalar sensores?</span>
-                <span class="faq-icon" aria-hidden="true"></span>
-              </button>
-              <div class="faq-content">
-                <p>O uso pode crescer com sensores, mas a estrutura da plataforma também ajuda a organizar áreas, clima e decisões ao longo da operação.</p>
-              </div>
-            </article>
-
-            <article class="faq-item reveal reveal-up" data-reveal data-delay="40">
-              <button class="faq-trigger" type="button" aria-expanded="false">
-                <span>Posso usar no celular?</span>
-                <span class="faq-icon" aria-hidden="true"></span>
-              </button>
-              <div class="faq-content">
-                <p>Sim. O site foi pensado para leitura em telas menores e a proposta do app é acompanhar alertas e recomendações com praticidade.</p>
-              </div>
-            </article>
-
-            <article class="faq-item reveal reveal-up" data-reveal data-delay="80">
-              <button class="faq-trigger" type="button" aria-expanded="false">
-                <span>Funciona para diferentes culturas?</span>
-                <span class="faq-icon" aria-hidden="true"></span>
-              </button>
-              <div class="faq-content">
-                <p>Sim. A lógica do IZES parte do monitoramento por área e da interpretação dos sinais do campo, o que permite adaptação a diferentes contextos produtivos.</p>
-              </div>
-            </article>
-
-            <article class="faq-item reveal reveal-up" data-reveal data-delay="120">
-              <button class="faq-trigger" type="button" aria-expanded="false">
-                <span>Como a IA ajuda?</span>
-                <span class="faq-icon" aria-hidden="true"></span>
-              </button>
-              <div class="faq-content">
-                <p>A IA detecta padrões, identifica desvios, prioriza áreas críticas e transforma dados complexos em orientações mais simples para ação.</p>
-              </div>
-            </article>
-
-            <article class="faq-item reveal reveal-up" data-reveal data-delay="160">
-              <button class="faq-trigger" type="button" aria-expanded="false">
-                <span>Posso começar sem sensores?</span>
-                <span class="faq-icon" aria-hidden="true"></span>
-              </button>
-              <div class="faq-content">
-                <p>Sim. A proposta é permitir uma evolução gradual, começando pela organização da propriedade, leitura climática e histórico de acompanhamento.</p>
-              </div>
-            </article>
-
-            <article class="faq-item reveal reveal-up" data-reveal data-delay="200">
-              <button class="faq-trigger" type="button" aria-expanded="false">
-                <span>Como solicitar uma demonstração?</span>
-                <span class="faq-icon" aria-hidden="true"></span>
-              </button>
-              <div class="faq-content">
-                <p>Use os canais de contato no rodapé para falar com a equipe e combinar uma apresentação da solução.</p>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="cta">
-        <div class="shell">
-          <article class="cta-panel" data-reveal>
-            <p class="eyebrow">Conheça o app</p>
-            <h2>Dados sozinhos não mudam o agro. Decisões mudam.</h2>
-            <p>Conheça o app IZES e veja como transformar informação em ação no momento certo.</p>
-            <a class="button button-primary" href="#hero">Conhecer o app</a>
-          </article>
-        </div>
-      </section>
+      <section class="cta section" id="cta"><div class="container cta-inner" data-reveal><div><p class="eyebrow">Próximo passo</p><h2>Quando os sinais do campo ficam claros, a decisão deixa de travar.</h2></div><div><p>Conheça a primeira versão do IZES e veja como solo, clima e IA podem virar uma orientação simples para pequenos produtores.</p><div class="cta-actions"><a class="button button-primary" href="mailto:sfphub.contato@gmail.com">Solicitar demonstração <span aria-hidden="true">↗</span></a><a class="quiet-link" href="tel:+5545998603178">Falar com a equipe <span aria-hidden="true">↗</span></a></div></div></div></section>
     </main>
-
-    <footer class="site-footer" id="footer">
-      <div class="shell footer-grid">
-        <div class="footer-brand">
-          <img src="./assets/logo.png" alt="IZES" class="footer-logo" />
-          <p>Monitoramento, análise e recomendação prática para decisões agrícolas no momento certo.</p>
-        </div>
-
-        <nav class="footer-links" aria-label="Links principais">
-          <h3>Links</h3>
-          <a href="#solucao">Solução</a>
-          <a href="#funcionalidades">Funcionalidades</a>
-          <a href="#beneficios">Benefícios</a>
-          <a href="#faq">FAQ</a>
-        </nav>
-
-        <div class="footer-contact">
-          <h3>Contato</h3>
-          <a href="mailto:contato@izes.app">sfphub.contato@gmail.com</a>
-          <a href="tel:+550000000000">+55 45 99860-3178</a>
-        </div>
-
-        <div class="footer-social">
-          <h3>Redes sociais</h3>
-          <a href="https://www.instagram.com/izis.hub/" target="_blank" rel="noopener noreferrer">Instagram</a>
-          <a href="https://www.linkedin.com/in/sofiaalamini/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          <a href="#footer">WhatsApp</a>
-        </div>
-      </div>
-
-      <div class="shell footer-bottom">
-        <p>© 2026 IZES. Todos os direitos reservados.</p>
-      </div>
-    </footer>
-
+    <footer class="footer"><div class="container footer-inner"><a class="brand" href="#hero" aria-label="Voltar ao início"><img src="./assets/logo.png" alt="IZES" /></a><p>Decisões simples para pequenos produtores.</p><a href="mailto:sfphub.contato@gmail.com">sfphub.contato@gmail.com</a><span>© IZES</span></div></footer>
     <script src="./script.js"></script>
   </body>
 </html>
